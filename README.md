@@ -2,7 +2,7 @@
 CAMshift is used for the target tracking,and we add the kalman filter to make the result more accurate
 We use the TIGER in the OTB100,the main fuction is CAMshift.m
 
-1.First use pic2video.m ,to create a video list
+1.First use pic2video.m ,to create a video list(I have upload the movie.avi,so you can go to step 2,provided you get the picture sequence,you need to run pic2video.m)
 
 2.Then open the CAMshift.m,meanshift.m and select.m
 
