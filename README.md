@@ -12,5 +12,13 @@ We use the TIGER in the OTB100,the main fuction is CAMshift.m
 
 5.finalcontrast.m This function provide the contrast between 2 algorithm ,each of the algorithm has to contrast with the ground truth.
   the ground truth contains 4 parameters,  （Upper left corner coordinates，Weight，Height）Provided you wanna make some anaylisis, here is the Precise plot and Success plot,and their errors curve.
+ 
+6.The ground truth is related to the video in this file,and if you want to make contrast with the other algorithms, you need to change your data format as 5.
+such as (101,55,33,44).
+
+7.The picture in this file shows the contrast with the CAMshift+Kalman filter and CAMshift , you can remove the part of the kalman filter so that you can generate the result as it shows.
 
 BTW,The matlab is 2016a，some fuctions in the early version may be not available.
+
+You can see more details about CAMshift in https://blog.csdn.net/qwe900/article/details/105841154
+and the more details about finalcontrast in https://blog.csdn.net/qwe900/article/details/106587322
