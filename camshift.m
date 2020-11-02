@@ -50,7 +50,7 @@ for i=rmin:rmax
 end
  
 % % create "tracking video.avi" and "backprojection video" "tracking video.avi" and "backprojection video"
-avi_trackingVideo = VideoWriter('E:\360MoveData\Users\Administrator\Desktop\MeanshiftµÄmatlab´úÂë\»ùÓÚMeanshiftµÄÊÓÆµÄ¿±ê¸ú×ÙËã·¨ÑĞ¾¿matlab´úÂë Ëïê»Ò»\contrast\box_kalman.avi');
+avi_trackingVideo = VideoWriter('E:\360MoveData\Users\Administrator\Desktop\Meanshiftçš„matlabä»£ç \åŸºäºMeanshiftçš„è§†é¢‘ç›®æ ‡è·Ÿè¸ªç®—æ³•ç ”ç©¶matlabä»£ç  å­™æ˜Šä¸€\contrast\box_kalman.avi');
 
 
 
@@ -123,7 +123,7 @@ for i = 1:frameTotal
         colcenterold = colcenter;
         %**********Kalman Filter**********
         N=633; %Simulation time or total number of sequences
-        %ÔëÉù
+        %å™ªå£°
         Q=eye(4);%Process noise variance
         R=eye(2); %Observed noise variance
         W=sqrt(Q)*randn(4,N);
@@ -134,7 +134,7 @@ for i = 1:frameTotal
         U=0;
         H=[1 0 0 0;0 1 0 0];%Observation matrix
         %initialization
-        X=zeros(4,N);%Coordinate and velocity components£¨x,y,vx,vy£©
+        X=zeros(4,N);%Coordinate and velocity componentsï¼ˆx,y,vx,vyï¼‰
         X_pre=zeros(4,N);
         X(:,1)=[rowcenterold,colcenterold,0,0]';%Initial displacement and velocity
         P0=1000000*eye(4);%Initial covariance
@@ -228,7 +228,7 @@ for i = 1:frameTotal
     
   
     % k =1.5 or k=2 or...
-    windowsize = 1.5 * sqrt(M00/256);w
+    windowsize = 1.5 * sqrt(M00/256);
      
    % get side length ... window size is an area so sqrt(Area)=sidelength
     sidelength = windowsize;
